@@ -196,8 +196,10 @@ public class Mescla {
         String nom = null;
         double preu = 0;
         
-        System.out.println("Els valors de la Mescla a modficar son:");
-        showMescla();
+        System.out.println("-------");
+        System.out.println("Valors:");
+        System.out.println("-------");
+        showMescla(); //Mostramos valores antes modificación
         
         System.out.println("\nIntrodueix la modificacio codi Mescla:");
         codi = DADES.next();
@@ -211,6 +213,8 @@ public class Mescla {
         setCodi(codi);
         setNom(nom);
         setPreu(preu);
+        
+        System.out.println("Els valors s'han modificat correctament.");
     }
 
     /*

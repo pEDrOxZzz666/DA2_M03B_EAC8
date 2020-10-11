@@ -157,8 +157,10 @@ public class Especia {
         double preu = 0;
         String picantor = null;
         
-        System.out.println("El valors de l'especia a modificar son:");
-        showEspecia();
+        System.out.println("-------");
+        System.out.println("Valors:");
+        System.out.println("-------");
+        showEspecia(); //Mostramos valores antes modificación
         
         System.out.println("\nIntrodueix codi: ");
         codi = DADES.next();
@@ -182,6 +184,8 @@ public class Especia {
         setCaracteristiques(caracteristiques);
         setPreu(preu);
         setPicantor(picantor);
+        
+        System.out.println("Els valors s'han modificat correctament.");
     }
     
     public void showEspecia() {

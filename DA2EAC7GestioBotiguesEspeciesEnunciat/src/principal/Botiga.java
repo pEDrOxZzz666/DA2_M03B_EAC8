@@ -142,7 +142,7 @@ public class Botiga {
      */
     public static Botiga addBotiga() {
         String adreca;
-        System.out.print("Escribe nueva dirección: ");
+        System.out.println("Escribe nueva dirección: ");
         adreca = DADES.nextLine();
         return new Botiga(adreca);
     }
@@ -162,14 +162,18 @@ public class Botiga {
     Retorn: cap
      */
     public void updateBotiga() {
-        String adreca;
+        String adreca = null;
         
-        System.out.println("Els valors a modificar de la botiga son:");
-        showBotiga();
+        System.out.println("-------");
+        System.out.println("Valors:");
+        System.out.println("-------");
+        showBotiga(); //Mostramos valores antes modificación
         
-        System.out.print("Escribe modificación dirección: ");
+        System.out.println("Escribe modificación dirección: ");
         adreca = DADES.nextLine();
         setAdreca(adreca);
+        
+        System.out.println("Els valors s'han modificat correctament.");
     }
     
     public void showBotiga() {

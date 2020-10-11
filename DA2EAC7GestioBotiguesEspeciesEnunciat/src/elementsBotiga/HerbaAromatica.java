@@ -127,8 +127,10 @@ public class HerbaAromatica {
         String caracteristiques = null;
         double preu = 0;
         
-        System.out.println("El valors de l'herba a modificar son:");
-        showHerbaAromatica();
+        System.out.println("-------");
+        System.out.println("Valors:");
+        System.out.println("-------");
+        showHerbaAromatica(); //Mostramos valores antes modificación
         
         System.out.println("\nIntrodueix codi Herba Aromatica:");
         codi = DADES.next();
@@ -145,6 +147,8 @@ public class HerbaAromatica {
         setNom(nom);
         setCaracteristiques(caracteristiques);
         setPreu(preu);
+        
+        System.out.println("Els valors s'han modificat correctament.");
     }
     
     public void showHerbaAromatica() {

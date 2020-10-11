@@ -137,8 +137,10 @@ public class Mestre {
         String sexe = null;
         String talla = null;
         
-        System.out.println("Els valor actual del Mestre/a son:");
-        showMestre();
+        System.out.println("-------");
+        System.out.println("Valors:");
+        System.out.println("-------");
+        showMestre(); //Mostramos valores antes modificación
         
         System.out.println("\nIntrodueix modificacio nif del Mestre/a:");
         nif = DADES.next();
@@ -160,6 +162,8 @@ public class Mestre {
         setNom(nom);
         setSexe(sexe);
         setTalla(talla);
+        
+        System.out.println("Els valors s'han modificat correctament.");
     }
     
     public void showMestre() {
