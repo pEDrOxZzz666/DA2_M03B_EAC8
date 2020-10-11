@@ -8,10 +8,6 @@
 package elementsBotiga;
 import java.util.Scanner;
 
-/**
- *
- * @author fta
- */
 public class Mescla {
 
     private String codi;
@@ -67,31 +63,31 @@ public class Mescla {
         this.mestre = mestre;
     }    
     
-    public void setEspecies(Especia[] especies){ //REVISAR SI ES CORRECTO
+    public void setEspecies(Especia[] especies){ 
         this.especies = especies;
     }
     
-    public void setPosicioEspecies(int posicioEspecies){ //REVISAR SI ES CORRECTO
+    public void setPosicioEspecies(int posicioEspecies){ 
         this.posicioEspecies = posicioEspecies;
     }
     
-    public void setQuantitatEspecies(double[] quantitatEspecies){  //REVISAR SI ES CORRECTO
+    public void setQuantitatEspecies(double[] quantitatEspecies){  
         this.quantitatEspecies = quantitatEspecies;
     }
     
-    public void setPosicioQuantitatEspecies(int posicioQuantitatEspecies){  //REVISAR SI ES CORRECTO
+    public void setPosicioQuantitatEspecies(int posicioQuantitatEspecies){  
         this.posicioQuantitatEspecies = posicioQuantitatEspecies;
     }
     
-    public void setHerbes(HerbaAromatica[] herbes){  //REVISAR SI ES CORRECTO
+    public void setHerbes(HerbaAromatica[] herbes){  
         this.herbes = herbes;
     }
     
-    public void setPosicioHerbes(int posicioHerbes){  //REVISAR SI ES CORRECTO
+    public void setPosicioHerbes(int posicioHerbes){  
         this.posicioHerbes = posicioHerbes;
     }
     
-    public void setQuantitatHerbes(double[] quantitatHerbes){  //REVISAR SI ES CORRECTO
+    public void setQuantitatHerbes(double[] quantitatHerbes){  
         this.quantitatHerbes = quantitatHerbes;
     }
     
@@ -108,7 +104,7 @@ public class Mescla {
         return nom;
     }
     
-    public Mestre getMestre(){  //REVISAR SI ES CORRECTO
+    public Mestre getMestre(){  
         return mestre;
     }
     
@@ -116,31 +112,31 @@ public class Mescla {
         return preu;
     }
     
-    public Especia[] getEspecies(){  //REVISAR SI ES CORRECTO
+    public Especia[] getEspecies(){  
         return especies;
     }
     
-    public int getPosicioEspecies(){  //REVISAR SI ES CORRECTO
+    public int getPosicioEspecies(){  
         return posicioEspecies;
     }
     
-    public double[] getQuantitatEspecies(){  //REVISAR SI ES CORRECTO
+    public double[] getQuantitatEspecies(){  
         return quantitatEspecies;
     }
     
-    public int getPosicioQuantitatEspecies(){  //REVISAR SI ES CORRECTO
+    public int getPosicioQuantitatEspecies(){  
         return posicioQuantitatEspecies;
     }
     
-    public HerbaAromatica[] getHerbes(){  //REVISAR SI ES CORRECTO
+    public HerbaAromatica[] getHerbes(){  
         return herbes;
     }
     
-    public int getPosicioHerbes(){  //REVISAR SI ES CORRECTO
+    public int getPosicioHerbes(){  
         return posicioHerbes;
     }
     
-    public double[] getQuantitatHerbes(){  //REVISAR SI ES CORRECTO
+    public double[] getQuantitatHerbes(){  
         return quantitatHerbes;
     }
     
@@ -200,6 +196,9 @@ public class Mescla {
         String nom = null;
         double preu = 0;
         
+        System.out.println("Els valors de la Mescla a modficar son:");
+        showMescla();
+        
         System.out.println("\nIntrodueix la modificacio codi Mescla:");
         codi = DADES.next();
         DADES.nextLine();
@@ -233,7 +232,7 @@ public class Mescla {
     
      Retorn: cap
      */
-    public void addEspecia(Especia especia, double quantitat) { //REVISAR QUE ES CORRECTO       
+    public void addEspecia(Especia especia, double quantitat) {       
         boolean duplicada = false;
         for(int i = 0; i < posicioEspecies; i++){
             if(especies[i].getCodi().equals(especia.getCodi())){
@@ -267,7 +266,7 @@ public class Mescla {
     
      Retorn: cap
      */
-    public void addHerba(HerbaAromatica herba, double quantitat) { //REVISAR QUE ES CORRECTO
+    public void addHerba(HerbaAromatica herba, double quantitat) { 
         boolean duplicada = false;
         for(int i = 0; i < posicioHerbes; i++){
             if(herbes[i].getCodi().equals(herba.getCodi())){
@@ -276,7 +275,7 @@ public class Mescla {
                 duplicada = true;
             }
         }        
-        if(duplicada == false){
+        if(!duplicada){
            herbes[posicioHerbes] = herba;
            quantitatHerbes[posicioQuantitatHerbes] = quantitat;
         

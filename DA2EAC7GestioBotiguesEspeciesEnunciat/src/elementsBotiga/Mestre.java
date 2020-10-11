@@ -7,10 +7,6 @@ package elementsBotiga;
 import java.util.Scanner;
 
 
-/**
- *
- * @author fta
- */
 public class Mestre {
 
     private String nif;
@@ -39,20 +35,20 @@ public class Mestre {
      TODO Mètodes accessors    
      */
     //Setters
-    public void setNif(String nouNif){
-        nif = nouNif;
+    public void setNif(String nif){
+        this.nif = nif;
     }
     
-    public void setNom(String nouNom){
-        nom = nouNom;
+    public void setNom(String nom){
+        this.nom = nom;
     }
     
-    public void setSexe(String nouSexe){
-        sexe = nouSexe;
+    public void setSexe(String sexe){
+        this.sexe = sexe;
     }
     
-    public void setTalla(String novaTalla){
-        talla = novaTalla;
+    public void setTalla(String talla){
+        this.talla = talla;
     }
     
     //Getters

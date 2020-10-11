@@ -40,24 +40,24 @@ public class Especia {
      */
     
     //Setters
-    public void setCodi(String nouCodi){
-        codi = nouCodi;
+    public void setCodi(String codi){
+        this.codi = codi;
     }
     
-    public void setNom(String nouNom){
-        nom = nouNom;
+    public void setNom(String nom){
+        this.nom = nom;
     }
     
-    public void setCaracteristiques(String novaCaracteristiques){
-        caracteristiques = novaCaracteristiques;
+    public void setCaracteristiques(String caracteristiques){
+        this.caracteristiques = caracteristiques;
     }
     
-    public void setPreu(double nouPreu){
-        preu = nouPreu;
+    public void setPreu(double preu){
+        this.preu = preu;
     }
     
-    public void setPicantor(String novaPicantor){
-        picantor = novaPicantor;
+    public void setPicantor(String picantor){
+        this.picantor = picantor;
     }
     
     //getters
@@ -120,8 +120,8 @@ public class Especia {
         DADES.nextLine(); 
         System.out.println("Introdueix picantor: ");
         System.out.println("\nels possibles graus a introduir, són: " + 
-                         "\"0\", \"1\", \"2\", \"3\", \"4\" o \"5\", " +
-                         "on \"0\" és no picant i \"5\" el màxim.");
+                           "\"0\", \"1\", \"2\", \"3\", \"4\" o \"5\", " +
+                           "on \"0\" és no picant i \"5\" el màxim.");
         picantor = DADES.next(); 
         DADES.nextLine(); 
         
@@ -156,6 +156,9 @@ public class Especia {
         String caracteristiques = null;
         double preu = 0;
         String picantor = null;
+        
+        System.out.println("El valors de l'especia a modificar son:");
+        showEspecia();
         
         System.out.println("\nIntrodueix codi: ");
         codi = DADES.next();

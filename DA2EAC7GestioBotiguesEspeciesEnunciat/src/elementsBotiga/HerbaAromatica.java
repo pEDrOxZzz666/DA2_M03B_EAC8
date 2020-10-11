@@ -5,10 +5,6 @@
 package elementsBotiga;
 import java.util.Scanner;
 
-/**
- *
- * @author fta
- */
 public class HerbaAromatica {
     
     private String codi;
@@ -37,20 +33,20 @@ public class HerbaAromatica {
      TODO Mètodes accessors    
      */
     //Setters
-    public void setCodi(String nouCodi){
-        codi = nouCodi;
+    public void setCodi(String codi){
+        this.codi = codi;
     }
     
-    public void setNom(String nouNom){
-        nom = nouNom;
+    public void setNom(String nom){
+        this.nom = nom;
     }
     
-    public void setCaracteristiques(String novesCaracteristiques){
-        caracteristiques = novesCaracteristiques;
+    public void setCaracteristiques(String caracteristiques){
+        this.caracteristiques = caracteristiques;
     }
     
-    public void setPreu(double nouPreu){
-        preu = nouPreu;
+    public void setPreu(double preu){
+        this.preu = preu;
     }
     
     //Getters
@@ -130,6 +126,9 @@ public class HerbaAromatica {
         String nom = null;
         String caracteristiques = null;
         double preu = 0;
+        
+        System.out.println("El valors de l'herba a modificar son:");
+        showHerbaAromatica();
         
         System.out.println("\nIntrodueix codi Herba Aromatica:");
         codi = DADES.next();

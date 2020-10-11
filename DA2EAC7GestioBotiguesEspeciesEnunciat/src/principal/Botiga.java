@@ -11,10 +11,6 @@ import elementsBotiga.Mescla;
 import elementsBotiga.Mestre;
 import java.util.Locale;
 
-/**
- *
- * @author fta
- */
 public class Botiga {
 
     private int codi;
@@ -167,6 +163,10 @@ public class Botiga {
      */
     public void updateBotiga() {
         String adreca;
+        
+        System.out.println("Els valors a modificar de la botiga son:");
+        showBotiga();
+        
         System.out.print("Escribe modificación dirección: ");
         adreca = DADES.nextLine();
         setAdreca(adreca);
@@ -249,7 +249,7 @@ public class Botiga {
         codi = herbes[posicioHerbes].getCodi();
         posHerba = selectHerbaAromatica(codi);
         if(posHerba >= 0){
-            System.out.println("L'especia ja existeix"); 
+            System.out.println("L'Herba ja existeix"); 
         }else{
             posicioHerbes++;
         }        

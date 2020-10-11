@@ -1,14 +1,12 @@
 package principal;
 import java.util.Scanner;
-/**
- *
- * @author fta
- */
+
 public class Application {
 
     static private Botiga[] botigues = new Botiga[10];
     static private int posicioBotigues = 0;
     static private Botiga botigaActual = null;
+    
     private final static Scanner DADES = new Scanner(System.in);
 
     public static void main(String[] args) {
@@ -19,6 +17,9 @@ public class Application {
         int opcio = 0;        
 
         do {
+            System.out.println("---------------------------------------------");
+            System.out.println("Menú Principal");
+            System.out.println("---------------------------------------------");
             System.out.println("\nSelecciona una opció");
             System.out.println("\n0. Sortir");
             System.out.println("\n1. Gestió de botigues");
@@ -74,6 +75,10 @@ public class Application {
 
         do {
             int indexSel = -1;
+            
+            System.out.println("---------------------------------------------");
+            System.out.println("Menú Botiques");
+            System.out.println("---------------------------------------------");            
             System.out.println("\nSelecciona una opció");
             System.out.println("\n0. Sortir");
             System.out.println("\n1. Alta");
@@ -140,7 +145,10 @@ public class Application {
     public static void menuMestres() {                
         int opcio = 0;
         
-        do{            
+        do{        
+            System.out.println("---------------------------------------------");
+            System.out.println("Menú Mestres");
+            System.out.println("---------------------------------------------");
             System.out.println("\nSelecciona una opció");
             System.out.println("\n0. Sortir");
             System.out.println("\n1. Alta");
@@ -197,7 +205,10 @@ public class Application {
     public static void menuEspecies() {
         int opcio = 0;
         
-        do{            
+        do{    
+            System.out.println("---------------------------------------------");
+            System.out.println("Menú Especies");
+            System.out.println("---------------------------------------------");
             System.out.println("\nSelecciona una opció");
             System.out.println("\n0. Sortir");
             System.out.println("\n1. Alta");
@@ -254,7 +265,10 @@ public class Application {
     public static void menuHerbes() {
         int opcio = 0;
         
-        do{            
+        do{           
+            System.out.println("---------------------------------------------");
+            System.out.println("Menú Herbes");
+            System.out.println("---------------------------------------------");
             System.out.println("\nSelecciona una opció");
             System.out.println("\n0. Sortir");
             System.out.println("\n1. Alta");
@@ -314,7 +328,10 @@ public class Application {
     public static void menuMescles() {
         int opcio = 0;
         
-        do{            
+        do{         
+            System.out.println("---------------------------------------------");
+            System.out.println("Menú Mescles");
+            System.out.println("---------------------------------------------");
             System.out.println("\nSelecciona una opció");
             System.out.println("\n0. Sortir");
             System.out.println("\n1. Alta");
