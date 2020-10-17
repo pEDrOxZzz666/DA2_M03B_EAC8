@@ -6,6 +6,7 @@ public class Uso_Empleado {
         
         
         
+        
     }
     
 }
