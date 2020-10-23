@@ -234,7 +234,7 @@ public class Mescla implements Component {
             mestre.showComponent();
         } else {
             System.out.println("\nEncara no s'ha assignat el mestre o mestra.");
-        }
+        }        
 
         for (int i = 0; i < posicioIngredients; i++) {
             ingredients[i].showComponent();

@@ -90,7 +90,7 @@ public class Especia extends Ingredient {
         System.out.println("\nDades especia");  
         System.out.println("**************");
         super.showComponent();
-        System.out.println("Picantor: " + picantor + "\n");
+        System.out.println("Picantor: " + picantor);
     }    
    
 }

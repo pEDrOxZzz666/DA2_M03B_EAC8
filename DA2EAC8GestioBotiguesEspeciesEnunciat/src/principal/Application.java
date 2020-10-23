@@ -291,10 +291,15 @@ public class Application {
                     botigaActual.addMestreMescla();
                     break;
                 case 6:
+                    int contMesclas = 0;
                     for (int i = 0; i < botigaActual.getPosicioComponents(); i++) {
                         if (botigaActual.getComponents()[i] instanceof Mescla){
                             botigaActual.getComponents()[i].showComponent();
+                            contMesclas++;
                         }                        
+                    }
+                    if(contMesclas == 0){
+                        System.out.println("\nNo hay mesclas creadas.");
                     }
                     break;
                 default:

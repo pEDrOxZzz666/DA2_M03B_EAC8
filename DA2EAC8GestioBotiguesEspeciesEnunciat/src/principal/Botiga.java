@@ -277,7 +277,8 @@ public class Botiga implements Component {
 
             if (pos >= 0) {
                 System.out.println("\nQuina quantitat s'ha d'afegir de l'espècia?");                                
-                mesclaSel.addIngredient((Especia)this.getComponents()[pos], DADES.nextDouble());                
+                mesclaSel.addIngredient((Especia)this.getComponents()[pos], DADES.nextDouble()); 
+                DADES.nextLine(); //LIMPIAMOS BUFFER
             } else {
                 System.out.println("\nNo existeix aquesta espècia");
             }
@@ -309,6 +310,7 @@ public class Botiga implements Component {
             if (pos >= 0) {
                 System.out.println("\nQuina quantitat s'ha d'afegir de l'herba aromàtica?");                
                 mesclaSel.addIngredient((HerbaAromatica)this.getComponents()[pos], DADES.nextDouble());
+                DADES.nextLine();//LIMPIAMOS BUFFER
             } else {
                 System.out.println("\nNo existeix aquesta herba aromàtica");
             }
